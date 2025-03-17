@@ -1,0 +1,47 @@
+<div class="container mt-4">
+    <h2 class="text-center">Conversor de Monedas</h2>
+    
+    <div class="card p-4">
+      <div class="mb-3">
+        <label for="amount">Cantidad:</label>
+        <input type="number" class="form-control" [(ngModel)]="amount">
+      </div>
+  
+      <div class="row">
+        <div class="col-md-5">
+          <label>De:</label>
+          <select class="form-select" [(ngModel)]="fromCurrency">
+            @if (currencies.length > 0) {
+              @for (currency of currencies; track currency) {
+                <option [value]="currency">{{ currency }}</option>
+              }
+            }
+          </select>
+        </div>
+  
+        <div class="col-md-2 text-center">
+          <h4>➡</h4>
+        </div>
+  
+        <div class="col-md-5">
+          <label>A:</label>
+          <select class="form-select" [(ngModel)]="toCurrency">
+            @if (currencies.length > 0) {
+              @for (currency of currencies; track currency) {
+                <option [value]="currency">{{ currency }}</option>
+              }
+            }
+          </select>
+        </div>
+      </div>
+  
+      <button class="btn btn-primary mt-3 w-100" (click)="convert()">Convertir</button>
+  
+      @if (convertedAmount !== null) {
+        <div class="alert alert-info mt-3 text-center">
+          {{ amount }} {{ fromCurrency }} = <strong>{{ convertedAmount.toFixed(2) }} {{ toCurrency }}</strong>
+        </div>
+      }
+    </div>
+  </div>
+  
