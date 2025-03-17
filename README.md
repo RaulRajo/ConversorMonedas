@@ -1,59 +1,15 @@
-# ConversorMonedas
+## Este es un conversor de monedas simple desarrollado con Angular 19.
+### La aplicación permite a los usuarios convertir una cantidad de dinero de una moneda a otra utilizando tasas de cambio en tiempo real obtenidas de una API externa.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.3.
+Características:
 
-## Development server
+- Conversión de monedas en tiempo real: Los valores de conversión se actualizan dinámicamente a través de una API de cambio de divisas (*https://api.exchangerate-api.com/v4/latest/*).
+- Selección de monedas: Los usuarios pueden elegir entre una lista de monedas disponibles para convertir.
+- Entrada de cantidad personalizada: Los usuarios pueden ingresar la cantidad de dinero que desean convertir.
+- Interfaz de usuario simple y reactiva: La aplicación presenta una interfaz limpia y accesible con controles de formulario intuitivos.
 
-To start a local development server, run:
-
-```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Tecnologías Utilizadas:
+- Angular 19 para la implementación del frontend.
+- HTTP Client para realizar peticiones a la API de tasas de cambio.
+- Bootstrap 5 para el diseño responsivo de la interfaz de usuario.
+- FormsModule y ngModel para la vinculación bidireccional de datos.
