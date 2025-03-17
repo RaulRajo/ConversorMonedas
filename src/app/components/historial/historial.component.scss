@@ -1,0 +1,79 @@
+$bg-dark: #1a1a1a;
+$text-light: #eaeaea;
+$input-bg: #333;
+$input-border: #444;
+$btn-bg: #ff5733;
+$btn-bg-hover: #e94e00;
+$border-color: #444;
+$alert-bg: #333;
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: $bg-dark;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  margin-left: 20px;
+  margin-right: 20px;
+
+h2 {
+  color: black;
+  text-align: center;
+}
+
+table {
+  width: 50%;
+  margin: 0 auto;
+  border-collapse: collapse;
+  color: $text-light;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+th, td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid $border-color;
+  font-size: 1rem;
+}
+
+th {
+  background-color: $bg-dark;
+  color: $text-light;
+}
+
+tr:nth-child(even) {
+  background-color: $input-bg;
+}
+
+tr:nth-child(odd) {
+  background-color: $bg-dark;
+}
+
+// Botón Limpiar
+button {
+  background-color: $btn-bg;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  width: 50%;
+  margin: 20px auto 0;
+  display: block;
+}
+
+  &:hover {
+    background-color: $btn-bg-hover;
+  }
+}
+
+.mt-3 {
+  margin-top: 15px;
+}
+
+.mt-4 {
+  margin-top: 30px;
+}

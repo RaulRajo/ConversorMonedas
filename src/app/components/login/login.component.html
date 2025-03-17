@@ -1,0 +1,14 @@
+<h2>Iniciar Sesión</h2>
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+  <label>Usuario:</label>
+  <input type="text" formControlName="username" required />
+  
+  <label>Contraseña:</label>
+  <input type="password" formControlName="password" required />
+  
+  <button type="submit">Entrar</button>
+  
+  @if (errorMessage) {
+    <p>{{ errorMessage }}</p>
+  }
+</form>
