@@ -1,0 +1,77 @@
+$background-dark: #121212;
+$primary-color: #6200ea;
+$secondary-color: #03dac6;
+$text-light: #eaeaea;
+$text-dark: #212121;
+$border-light: #333;
+$error-color: #f44336;
+$btn-bg: #ff5733;
+$btn-bg-hover: #e94e00;
+
+h2 {
+  color: black;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  label {
+    color: white;
+    font-size: 1rem;
+  }
+
+  input {
+    background-color: #333;
+    color: white;
+    border: 1px solid $border-light;
+    border-radius: 5px;
+    padding: 12px;
+    font-size: 1rem;
+
+    &:focus {
+      border-color: $primary-color;
+      box-shadow: 0 0 0 3px rgba(98, 0, 234, 0.2);
+    }
+  }
+
+  button {
+    background-color: $btn-bg;
+    border-color: $btn-bg;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $btn-bg-hover;
+    }
+  }
+
+  p {
+    color: $error-color;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  a {
+    color: $primary-color;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

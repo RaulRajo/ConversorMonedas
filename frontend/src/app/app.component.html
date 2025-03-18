@@ -1,7 +1,7 @@
 @if (authService.isAuthenticated$()) {
     <nav>    
       <span>Bienvenido, {{ authService.user$() }}</span>      
-      <a routerLink="/">Conversor</a>
+      <a routerLink="/convert">Conversor</a>
       <a routerLink="/historial">Historial</a>
       <a routerLink="/graficos">Gráficos</a>
       <button (click)="logout()">Cerrar Sesión</button>
